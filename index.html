@@ -17,47 +17,55 @@
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Platillos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi corporis eligendi molestiae sit quae
-            commodi, nobis eos illo consequuntur alias dolorum ex odio, eius accusantium quibusdam obcaecati laborum
-            nesciunt officiis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum quos repellat, ullam atque culpa
-            aperiam dolore eum sapiente corrupti adipisci rerum? Repudiandae deleniti necessitatibus architecto qui
-            fuga maxime saepe.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem neque inventore adipisci atque
-            cumque alias consequatur. Eos natus ipsum doloremque sed, fuga nesciunt saepe, et debitis quo quaerat
-            corporis.
-        </section>
+        <div class="contenedor">
+            <section id="sobre-mi">
+                <h2>Sobre mi</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi corporis eligendi molestiae sit quae
+                    commodi, nobis eos illo consequuntur alias dolorum ex odio, eius accusantium quibusdam obcaecati
+                    laborum
+                    nesciunt officiis?
+                </p>
+            </section>
 
-        <section id="platillos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, consequuntur sit quam voluptatum
-            repellat minus quis accusamus officiis natus beatae eos debitis sequi saepe odio ducimus perferendis ullam
-            aliquam ipsam?
-        </section>
-
-        <section id="nosotros">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, impedit veniam laborum recusandae ex alias
-            similique cumque possimus consequatur culpa quos mollitia fuga optio officiis excepturi dolore neque! Et,
-            tenetur.
-        </section>
-
-        <section id="contacto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut eos enim magnam dignissimos quod autem
-            quisquam error, quia corporis voluptatum possimus nostrum porro alias nihil ad explicabo eaque ea.
-        </section>
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, consequuntur sit quam
+                    voluptatum
+                    repellat minus quis accusamus officiis natus beatae eos debitis sequi saepe odio ducimus perferendis
+                    ullam
+                    aliquam ipsam?
+                </p>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 JhonatanD. Todos los derechos reservados.</p>
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <!--GET se envian los datos como parte de la URL-->
+        <!--POST se envian los datos en el cuerpo de la solicitud HTTP-->
+        <form action="" method="post">
+            <!--El FOR se conecta con el ID-->
+            <!--El NAME se vincula para enviar a la BD-->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
     </footer>
 </body>
 

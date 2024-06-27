@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 6.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    width: 85rem;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h2{
+    margin-top: 3rem;
+}
